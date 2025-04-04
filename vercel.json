@@ -1,5 +1,11 @@
 {
     "routes": [
-      { "src": "/(.*)", "dest": "/index.html", "status": 200 }
+      {
+        "src": "/.*",
+        "dest": "/index.html",
+        "headers": {
+          "Cache-Control": "no-cache"
+        }
+      }
     ]
   }
